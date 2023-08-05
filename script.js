@@ -29,3 +29,23 @@ function validateForm() {
     return true; // Form is valid and can be submitted
   }
   
+// Function to scroll to the top of the page
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+// Show or hide the "Scroll to Top" button based on the user's scroll position
+function handleScroll() {
+  const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.classList.add('show');
+  } else {
+    scrollToTopBtn.classList.remove('show');
+  }
+}
+
+// Add event listener to handle scroll
+window.addEventListener('scroll', handleScroll);

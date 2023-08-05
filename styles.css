@@ -11,9 +11,7 @@
 
 
 
-
-
- /* Style the header/navigation section */
+ /* Styling the header/navigation section */
 header {
     background: linear-gradient(rgba(89, 53, 106, 0.7), rgba(0, 0, 0, 0.7)), url("headerbg.jpg") center/cover no-repeat;
     padding: 20px;
@@ -42,7 +40,7 @@ header {
     position: relative;
   }
   
-  /* Add a bottom border to the navigation links on hover */
+  /* Adding a bottom border to the navigation links on hover */
   nav a::after {
     content: '';
     display: block;
@@ -61,7 +59,7 @@ header {
     width: 100%;
   }
   
-  /* Add some animation to the header(home,about,projects,contacts) text */
+  /* Adding animation to the header(home,about,projects,contacts) text */
   header h1 {
     font-size: 48px;
     color: #ff0000;
@@ -93,7 +91,7 @@ header {
 
 
 
-/* Add a custom font */
+/* Adding a custom font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
@@ -101,7 +99,7 @@ header {
 
 
 
-/* Style the home section */
+/* Styling the home section */
 #home {
   text-align: center;
   padding: 100px 0;
@@ -155,7 +153,7 @@ header {
   opacity: 0.9;
 }
 
-/* Add a subtle animation */
+/* Adding a subtle animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -364,7 +362,7 @@ header {
 
 
 
-/* Style the Contact section */
+/* Styling the Contact section */
 #contact {
   padding: 20px 0;
   text-align: center;
@@ -389,16 +387,16 @@ header {
   gap: 40px;
 }
 
-.contact-info, {
+.contact-info {
   flex: 1 1 50%;
-  color:whitesmoke;
-
+  color: whitesmoke;
 }
 
-.contact-info h3,{
+.contact-info h3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
+
 
 .contact-info p {
   font-size: 20px;
@@ -445,7 +443,7 @@ td {
   padding: 10px 0;
 }
 
-/* Style the form labels and input elements */
+/* Styling the form labels and input elements */
 label {
   display: block;
   font-weight: bold;
@@ -474,8 +472,106 @@ input[type="submit"]:hover {
 
 
              
-            
+ /* Adding styles for the "Scroll to Top" button */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #562164;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  font-size: 16px;
+}
 
-              
-              
-           
+#scrollToTopBtn:hover {
+  background-color: #350952;
+}
+
+/* Show the button when the user scrolls down 20px from the top of the document */
+@media screen and (min-width: 768px) {
+  #scrollToTopBtn {
+    display: none;
+  }
+
+  #scrollToTopBtn.show {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* styles of gallery page start */
+
+/* Gallery section */
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.photo-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.photo:hover .photo-info {
+  opacity: 1;
+}
+
+.photo-info h3 {
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+}
+
+.photo-info p {
+  font-size: 14px;
+  margin: 5px 0;
+  text-align: center;
+}
+
+/* Swiper Slider Styles */
+.swiper-container {
+  width: 100%;
+  height: 400px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
