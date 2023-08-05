@@ -575,3 +575,53 @@ input[type="submit"]:hover {
   height: 100%;
   object-fit: cover;
 }
+
+
+
+
+#newsletter {
+  background-color: #dbc6f2;
+  padding: 40px;
+  text-align: center;
+}
+
+#newsletter h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #350952;
+}
+
+#newsletter p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #5a5a5a;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-form input {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #350952;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #350952;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #8119bc;
+}
