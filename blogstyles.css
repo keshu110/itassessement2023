@@ -1,0 +1,153 @@
+ /*  a nice background color and font family for the whole page */
+ body {
+    background-color: #b98eed;
+    font-family: Arial, sans-serif;
+  }
+  
+
+
+
+
+
+ /* Styling the header/navigation section */
+header {
+    background: linear-gradient(rgba(89, 53, 106, 0.7), rgba(0, 0, 0, 0.7)), url("headerbg.jpg") center/cover no-repeat;
+    padding: 20px;
+    color: #350952;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 120px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  /* Adding a bottom border to the navigation links on hover */
+  nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ff0000;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s;
+  }
+  
+  
+  nav a:hover::after {
+    width: 100%;
+  }
+  
+  /* Adding animation to the header(home,about,projects,contacts) text */
+  header h1 {
+    font-size: 48px;
+    color: #ff0000;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  header p {
+    font-size: 24px;
+    color: #fff;
+    animation: fadeInUp 1s ease-out 0.5s;
+  }
+  
+  /* Keyframe animation for fadeInUp effect */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ 
+
+  /* Adding styles for the "Scroll to Top" button */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ce37f8;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  #scrollToTopBtn:hover {
+    background-color: #ff0404;
+  }
+  
+  /* Show the button when the user scrolls down 20px from the top of the document */
+  @media screen and (min-width: 768px) {
+    #scrollToTopBtn {
+      display: none;
+    }
+  
+    #scrollToTopBtn.show {
+      display: block;
+    }
+  }
+
+
+
+
+
+
+/* Adding a custom font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+/* Style of social media links */
+.social-links {
+    margin-top: 40px;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .social-links a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .social-links a:hover {
+    background-color: #8119bc;
+  }
+
+  

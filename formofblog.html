@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post</title>
+  <link rel="stylesheet" href="blogstyles.css">
+</head>
+<body>
+
+  <!-- Header section -->
+  <header>
+    <!-- ... (same header content as other pages) ... -->
+  </header>
+
+  <!-- Blog Post Content -->
+  <section id="blog-post-content">
+    <div class="blog-post">
+      <img src="blog-thumbnail.jpg" alt="Blog Post Thumbnail">
+      <h2>Blog Post Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis velit. Fusce vulputate convallis magna
+        ac egestas. Integer luctus consectetur nisi, sit amet sollicitudin ipsum dictum at. Suspendisse semper
+        consectetur elit, ac luctus dolor facilisis a. Suspendisse auctor ipsum vel erat tempus, non posuere nunc
+        convallis.
+      </p>
+    </div>
+  </section>
+
+  <!-- Comment Form -->
+  <section id="comment-form-section">
+    <div class="comment-form-container">
+      <h3>Add Your Comment</h3>
+      <form action="add-comment.php" method="POST" class="comment-form">
+        <div>
+          <label for="name">Your Name:</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+          <label for="comment">Your Comment:</label>
+          <textarea name="comment" id="comment" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit Comment</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <footer>
+    <!-- ... (same footer content as other pages) ... -->
+  </footer>
+
+</body>
+</html>

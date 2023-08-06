@@ -1,0 +1,47 @@
+/* Styling the form table */
+table {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: #714999;
+  }
+  
+  /* Styling the form input fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+  
+  /* Styling the form textarea */
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #9d8686;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  /* Styling the form button */
+  button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #ff0404;
+  }
+  

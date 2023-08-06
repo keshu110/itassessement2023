@@ -1,11 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="blogstyles.css">
 </head>
+
 <body>
+
+  <!-- Header section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <!-- Blog section -->
+  <section id="blog-posts">
+    <div class="blog-post">
+      <img src="tedtalk2.jpeg" alt="Blog Post 1">
+      <h3><a href="https://www.ted.com/talks/ted_ed_how_do_we_create_a_better_economy?subtitle=en">Blog Post 1</a></h3>
+      <p>How do we create a better economy?
+        </p>
+      <form  action="thankyou.html" method="POST" target="_blank">
+
+        <button type="submit">Add Comment</button>
+      </form>
+    </div>
+
+    <div class="blog-post">
+      <img src="tedtalk3.jpeg" alt="Blog Post 2">
+      <h3><a href="https://www.ted.com/talks/ted_ed_can_the_economy_grow_forever?subtitle=en">Blog Post 2</a></h3>
+      <p>Can the economy grow forever?.</p>
+      <form action="thankyou.html" method="POST" target="_blank">
     
+        <button type="submit">Add Comment</button>
+      </form>
+    </div>
+
+    <!-- we can add more blog posts here -->
+
+  </section>
+
+
+
+
+  <!-- Footer section -->
+ <footer>
+
+
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/keshav-mahatha-063971254" target="_blank"
+     rel="noopener noreferrer">
+     <img src="Icons/linkedinicon2.png" alt="LinkedIn"></a>
+
+    <a href="https://github.com/keshu110" target="_blank" 
+    rel="noopener noreferrer">
+    <img src="Icons/githubicon.png" alt="GitHub"></a>
+
+    <a href="https://twitter.com/unnfriendme?s=21&t=wS7oLGSuXmltwrWz5pMtww"
+    target="blank" rel="noopener noreferrer">
+    <img src="Icons/twitter_icon.png" alt="twitter">
+    </a>
+
+    <a href="https://www.threads.net/@1ts_ke5h4v"
+    target="blank" rel="noopener noreferrer">
+    <img src="Icons/threads_icon.png" alt="threads">
+    </a>
+
+    <a href="https://youtube.com/@keshavmahatha5955"
+    target="blank" rel="noopener noreferrer">
+    <img src="Icons/youtubeicon2.png" alt="youtube">
+    </a>
+  </div>
+
+
+<div class="contact-info">
+  <h3>Contact Information</h3>
+  <p>Phone: 9851331022</p>
+  <p>Address: Trade tower, Kathmandu, Nepal</p>
+  <a href="mailto:keshav7582@gmail.com">Email Me</a>
+  <p>&copy; 2023 Keshav Kumar Mahatha. All rights reserved.</p>
+</div>
+</footer>
+
+
+<a href="#" id="scrollToTopBtn" onclick="scrollToTop()">Scroll to Top</a>
+
+<script src="script.js"></script>
+
+
 </body>
+
 </html>
