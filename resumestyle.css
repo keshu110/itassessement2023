@@ -1,0 +1,339 @@
+/* Style of Resume code */
+
+/* Styling the header/navigation section */
+header {
+    background: linear-gradient(rgba(89, 53, 106, 0.7), rgba(0, 0, 0, 0.7)), url("headerbg.jpg") center/cover no-repeat;
+    padding: 20px;
+    color: #350952;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 120px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  /* Adding a bottom border to the navigation links on hover */
+  nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ff0000;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s;
+  }
+  
+  
+  nav a:hover::after {
+    width: 100%;
+  }
+  
+  /* Adding animation to the header(home,about,projects,contacts) text */
+  header h1 {
+    font-size: 48px;
+    color: #ff0000;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  header p {
+    font-size: 24px;
+    color: #fff;
+    animation: fadeInUp 1s ease-out 0.5s;
+  }
+  
+  /* Keyframe animation for fadeInUp effect */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ 
+
+
+
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li, table {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  
+  
+  
+  body {
+    background-color: #562778;
+  }
+  
+  header {
+    background-color: #682598;
+  }
+  
+  header nav ul li a {
+    color: #ffffff;
+  }
+  
+  /* Social links styling */
+  .social-links img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: transform 0.2s ease;
+  
+  }
+  
+  .social-links img:hover {
+    transform: scale(1.2);
+  }
+  
+  
+  #resume {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #resume h2 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  
+  #resume table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #e6c7f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #resume table td, #resume table th {
+    padding: 12px;
+    border: 1px solid #2f014a;
+  }
+  
+  #resume table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+  }
+  
+  #resume ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #resume ul li {
+    width: 50%;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  /* Hobbies, Certificates, Languages, Interests sections (similar styling as Resume section) */
+  #hobbies, #certificates, #languages, #interests {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  /* Footer section */
+  footer {
+    background-color: #6d26a7;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  
+  
+  /* Style of social media links */
+.social-links {
+    margin-top: 40px;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .social-links a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .social-links a:hover {
+    background-color: #8119bc;
+  }
+
+  
+              
+ /* Adding styles for the "Scroll to Top" button */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #c65ae4;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  #scrollToTopBtn:hover {
+    background-color: #ff0101;
+  }
+  
+  /* Show the button when the user scrolls down 20px from the top of the document */
+  @media screen and (min-width: 768px) {
+    #scrollToTopBtn {
+      display: none;
+    }
+  
+    #scrollToTopBtn.show {
+      display: block;
+    }
+  }
+  
+  
+  /* style to the text color to white */
+#hobbies {
+    color: #fff;
+  }
+  
+  #hobbies h3 {
+    color: #fff;
+  }
+  
+  #hobbies ul li {
+    color: #fff;
+  }
+
+  /* changing font color of certificates section*/
+
+#certificates {
+    color: #fff;
+  }
+  
+  #certificates h3 {
+    color: #fff;
+  }
+  
+  #certificates ul li {
+    color: #fff;
+  }
+  #languages {
+    color: #fff;
+  }
+  #interests {
+    color: #fff;
+  }
+
+
+  /* designing of resume section*/
+  #resume {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .resume-content {
+    margin-top: 20px;
+  }
+  
+  .resume-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table td {
+    padding: 12px;
+    border: 1px ;
+    text-align: center;
+  }
+  
+  table th {
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  table td strong {
+    font-weight: bold;
+  }
+  
+  table td[colspan="2"] {
+    text-align: center;
+  }
+  
+  table td[colspan="3"] {
+    text-align: right;
+  }
+  

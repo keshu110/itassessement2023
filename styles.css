@@ -478,7 +478,7 @@ input[type="submit"]:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #562164;
+  background-color: #ce37f8;
   color: #fff;
   padding: 10px 15px;
   border-radius: 5px;
@@ -488,7 +488,7 @@ input[type="submit"]:hover {
 }
 
 #scrollToTopBtn:hover {
-  background-color: #350952;
+  background-color: #ff0404;
 }
 
 /* Show the button when the user scrolls down 20px from the top of the document */
@@ -625,3 +625,8 @@ input[type="submit"]:hover {
 .newsletter-form button:hover {
   background-color: #8119bc;
 }
+
+
+
+
+
