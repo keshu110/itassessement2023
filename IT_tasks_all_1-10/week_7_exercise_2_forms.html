@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title> Form 1 </title>
+</head>
+
+<body style="background-color: #5fe8fd;">
+    <div id="container">
+        <h2 class="heading"> Forms 2</h2>
+        <p>
+            Some info about the forms...
+        </p>
+    </div>
+    <form>
+        <table border="2px" width="1000px" align="center"
+        cellpadding="0px" cellspacing="1px">
+        <tr>
+            <td>
+                <table border="0px" cellpadding="4px" cellspacing="10px"
+                width="100%">
+                    <tr>
+                        <td width="20%">Name </td>
+                       <td>
+                        <input size="50" type="text" name="name">
+                       </td> 
+                    </tr>
+                    <tr>
+                        <td width="20%">Address </td>
+                            <td>
+                             <input size="50" type="text" name="Address">
+                            </td>
+                    </tr>
+                    <tr>
+                        <td width="20%">Email </td>
+                        <td>
+                         <input size="50" type="email" name="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20%">Gender </td>
+                        <td>
+                         <input type="radio" name="gender" value="M" checked>Male
+                         <input type="radio" name="gender" value="F">Female
+                         <input type="radio" name="gender" value="O">Other
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20%">Hobbies </td>
+                        <td>
+                         <input type="checkbox" name="sports" value="sports">sports
+                         <input type="checkbox" name="movies" value="movies"checked> movies
+                         <input type="checkbox" name="travelling" value="travelling"> Travelling
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20%">country </td>
+                        <td>
+                         <select size="1" name="country">
+                            <option value="np">Nepal</option>
+                            <option value="in">India</option>
+                            <option selected value="China">China</option>
+                            <option value="usa">USA</option>
+                            <option value="uk">UK</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20%">Message</td>
+                        <td>
+                            <textarea name="Address"  cols="50" rows="8"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="submit" value="submit">
+                            <input type="reset" name="reset" value="clear">
+                        </td>
+                    </tr>
+            </td>
+        </tr>
+        </table>
+    </form>
+    
+    </html>

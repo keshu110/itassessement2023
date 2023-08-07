@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result Calculator</title>
+  <style>
+    /* Add any additional styles here */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Result Calculator</h1>
+  <form onsubmit="calculateResult(event)">
+    <label for="marks">Enter your marks:</label>
+    <input type="number" id="marks" name="marks" required>
+    <button type="submit">Calculate</button>
+  </form>
+  <p id="result"></p>
+
+  <script>
+    function calculateResult(event) {
+      event.preventDefault();
+      const marks = parseFloat(document.getElementById("marks").value);
+      let resultText = "";
+
+      if (marks >= 80 && marks <= 100) {
+        resultText = "Distinction";
+      } else if (marks >= 60 && marks < 80) {
+        resultText = "First Division";
+      } else if (marks >= 50 && marks < 60) {
+        resultText = "Second Division";
+      } else if (marks >= 40 && marks < 50) {
+        resultText = "Third Division";
+      } else if (marks < 40) {
+        resultText = "Fail";
+      } else {
+        resultText = "Invalid input";
+      }
+
+      document.getElementById("result").textContent = `Your result: ${resultText}`;
+    }
+  </script>
+</body>
+</html>

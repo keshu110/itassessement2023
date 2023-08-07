@@ -1,0 +1,84 @@
+
+body, h1, h5, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Main container */
+.main_content {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid black; /* Add a border around the main content */
+}
+
+/* Header */
+header {
+    background-color: #d6a658;
+    color: #4b210e;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Navigation */
+.nav_content {
+    display: flex;
+    border: 2px solid black; /* Add a border around the navigation section */
+    background-color: #f5cb7d; /* Set the background color for the navigation section */
+}
+
+.nav_left {
+    width: 25%;
+    border: 3px solid black; /* Add a border around each navigation column */
+}
+
+ .nav_right {
+    width: 75%;
+    border: 3px solid black; /* Add a border around each navigation column */
+}
+
+
+
+
+.nav_left ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block; /* Display the links as block elements for better spacing */
+
+    padding: 5px 10px; /* Add padding to the navigation links */
+}
+
+
+
+/* Right column */
+.nav_right_content {
+    padding: 10px;
+    background-color: #c39d62; /* Set the background color for the right column content */
+    color: #4b210e; /* Set the text color for the right column content */
+}
+
+.nav_right_content h2 {
+    margin-bottom: 10px;
+}
+
+.nav_right_content ul {
+    list-style: disc; /* Use bullet points for the unordered list */
+    margin-left: 20px; /* Add indentation for the list items */
+}
+
+.nav_right_content ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #d6a658;
+    color: #4b210e;
+    border: 3px solid black; /* Add a border around the footer */
+}

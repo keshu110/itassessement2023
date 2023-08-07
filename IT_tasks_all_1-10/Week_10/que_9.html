@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compute Sum and Product</title>
+</head>
+<body>
+    <h1>Compute Sum and Product</h1>
+
+    <script type="text/javascript">
+        // JavaScript code goes here
+        function computeSumAndProduct() {
+            // Get the input values from the user
+            const inputArray = document.getElementById("numbersInput").value.split(',').map(Number);
+            
+            // Calculate the sum and product of the array
+            let sum = 0;
+            let product = 1;
+
+            for (let i = 0; i < inputArray.length; i++) {
+                sum += inputArray[i];
+                product *= inputArray[i];
+            }
+
+            // Display the results
+            document.getElementById("sumResult").innerText = `Sum: ${sum}`;
+            document.getElementById("productResult").innerText = `Product: ${product}`;
+        }
+    </script>
+
+    <label for="numbersInput">Enter a list of numbers (separated by commas): </label>
+    <input type="text" id="numbersInput">
+    <button onclick="computeSumAndProduct()">Compute</button>
+
+    <div>
+        <p id="sumResult">Sum:</p>
+        <p id="productResult">Product:</p>
+    </div>
+</body>
+</html>

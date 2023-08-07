@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Images</title>
+  <style>
+    /* Add any additional styles here */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    img {
+      max-width: 200px;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Images</h1>
+
+  <div id="imageContainer">
+    <!-- The images will be populated by JavaScript -->
+  </div>
+
+  <script>
+    function generateImages() {
+      const imageContainer = document.getElementById("imageContainer");
+
+      for (let i = 1; i <= 4; i++) {
+        const image = document.createElement("img");
+        image.src = `${i}.jpeg`;
+        image.alt = `Image ${i}`;
+
+        imageContainer.appendChild(image);
+      }
+    }
+
+    generateImages();
+  </script>
+</body>
+
+</html>

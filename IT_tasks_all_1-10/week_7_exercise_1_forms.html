@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week 7, Form 1</title>
+</head>
+<body>
+    <form>
+        <table border="2px" width="500px" align="center" cellpadding="0px" cellspacing="0px">
+            <tr>
+                <td>
+                    <table border="0px" cellpadding="4px" cellspacing="7px" width="100%">
+                        <tr>
+                            <td colspan="2"><h1>Search our website</h1></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><hr></td>
+                        </tr>
+                        <tr>
+                            <td width="20px">Where do you want to search?</td>
+                        </tr>
+                        <tr>                      
+                            <td>
+                                <input type="radio" name="searchLocation" value="whole site" checked>Whole site<br>
+                                <input type="radio" name="searchLocation" value="Business Partners Section">Business Partners Section<br>
+                                <input type="radio" name="searchLocation" value="Corporate Communication Section">Corporate Communication Section<br>
+                                <input type="radio" name="searchLocation" value="Lotus Education Section">Lotus Education Section<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20px">Enter a word or two that we can search on:</td> 
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <textarea name="searchQuery" rows="8" cols="50"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" name="submit" value="submit">
+                                <input type="reset" name="reset" value="clear">
+                            </td>
+                        </tr>
+                    </table>           
+                </td>
+            </tr>       
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Layout with Alternate Background Colors</title>
+  <style>
+    /* Add any additional styles here */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #85c1e9; /* Light bluish color for the table head */
+    }
+
+    /* Alternate background colors for table rows */
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Table with Alternate Background Color</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Number</th>
+        <th>Name</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+
+      <!-- The table body will be populated by JavaScript -->
+    </tbody>
+  </table>
+
+  <script>
+    function generateTable() {
+      const tableBody = document.getElementById("tableBody");
+      const data = [
+        { name: "name1", image: "1.jpeg" },
+        { name: "name2", image: "2.jpeg" },
+        { name: "name3", image: "3.jpeg" },
+        { name: "name4", image: "4.jpeg" }
+      ];
+
+      for (let i = 0; i < data.length; i++) {
+        const row = document.createElement("tr");
+        const numberCell = document.createElement("td");
+        const nameCell = document.createElement("td");
+        const imageCell = document.createElement("td");
+
+        numberCell.textContent = i + 1;
+        nameCell.textContent = data[i].name;
+        imageCell.textContent = data[i].image;
+
+        row.appendChild(numberCell);
+        row.appendChild(nameCell);
+        row.appendChild(imageCell);
+
+        tableBody.appendChild(row);
+      }
+    }
+
+    generateTable();
+  </script>
+</body>
+
+</html>
